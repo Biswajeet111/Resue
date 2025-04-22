@@ -1,6 +1,9 @@
 package com.example.resq;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +18,20 @@ public class com extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_com);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        Button btn;
+        EditText etd1,etd2;
+        btn = findViewById(R.id.btn);
+        etd1 = findViewById(R.id.etd1);
+        etd2 = findViewById(R.id.etd2);
+        String phone = etd1.getText().toString();
+        String otp = etd2.getText().toString();
+        if (phone.isEmpty() || otp.isEmpty()) {
+            return;
+        }
+        btn.setOnClickListener(v -> {
+            Intent next = new Intent(com.this,MapsActivity.class);
+            startActivity(next);
         });
+        }
+
     }
-}
