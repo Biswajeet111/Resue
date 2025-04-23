@@ -6,16 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    
-
+    android:background="@drawable/bg"
     tools:context=".User">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESQ APP"
+        android:textSize="60dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#F0E4E9"
+        android:textStyle="bold"/>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign"
         android:layout_width="261dp"
         android:layout_height="75dp"
        android:layout_centerHorizontal="true"
        android:layout_marginTop="250dp"
-       android:background="#E91E63"
+       android:background="#59C82990"
         android:text="login"
         android:textAlignment="center"
         android:textColor="@color/white"

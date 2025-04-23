@@ -22,7 +22,7 @@ public class dom extends AppCompatActivity {
 
         // Display the selected item
         TextView resultTextView = findViewById(R.id.resultTextView);
-        resultTextView.setText("Selected Emergency: " + selectedItem + "\n\nAdvice:\n" + answer);
+        resultTextView.setText("Selected Emergency: " + selectedItem  + answer);
     }
 }
 

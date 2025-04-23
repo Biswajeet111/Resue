@@ -47,7 +47,7 @@ public class User extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(User.this,MainActivity.class);
+                Intent next = new Intent(User.this,Information.class);
                 startActivity(next);
             }
         });

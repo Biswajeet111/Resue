@@ -50,19 +50,19 @@ public class bom extends AppCompatActivity {
 
         // Create a HashMap to store answers for each item
         HashMap<String, String> answers = new HashMap<>();
-        answers.put("Heart attack", "Seek immediate medical attention. Call emergency services and start CPR if needed.");
-        answers.put("Stroke", "Get the person to the hospital as soon as possible. Act FAST: Face drooping, Arm weakness, Speech difficulty, Time to call emergency.");
-        answers.put("Allergic reaction", "Administer antihistamines or epinephrine if available. Seek medical help.");
-        answers.put("Broken bone", "Immobilize the injured area and seek professional medical care.");
-        answers.put("Food poisoning", "Stay hydrated and rest. Seek medical attention if symptoms persist.");
-        answers.put("Unconsciousness", "Check for breathing and pulse. Call emergency services and provide CPR if necessary.");
-        answers.put("Concussion", "Keep the person awake and monitor their symptoms. Seek medical help.");
-        answers.put("Heavy bleeding", "Apply pressure to the wound and elevate the affected area. Seek emergency care.");
-        answers.put("Seizure", "Ensure safety by clearing nearby objects. Do not restrain the person. Seek medical attention after the seizure ends.");
-        answers.put("High fever", "Administer fever-reducing medication and keep hydrated. If the fever persists, consult a doctor.");
-        answers.put("Asphyxiation", "Perform Heimlich maneuver if choking. Seek immediate medical help.");
-        answers.put("Heart failure", "Seek emergency medical care. Administer oxygen if available.");
-        answers.put("Drug overdose", "Call emergency services immediately. Administer naloxone if available.");
+        answers.put("Heart attack", "Precautions: Maintain a healthy lifestyle, avoid smoking, eat heart-healthy foods, and exercise regularly. Treatment: Seek immediate medical attention. Call emergency services and administer CPR if trained and necessary. Provide aspirin to thin blood (if safe and recommended).");
+        answers.put("Stroke", "Precautions: Monitor blood pressure, manage diabetes, maintain a healthy diet, and avoid smoking. Recognize symptoms early using FAST: Face drooping, Arm weakness, Speech difficulty, Time to act. Treatment: Get the person to the hospital urgently. Do not provide food or drinks as swallowing may be impaired. Keep the person calm and still.");
+        answers.put("Allergic reaction", "Precautions: Avoid allergens, carry antihistamines or epinephrine, and consider wearing a medical alert bracelet. Treatment: For mild reactions, administer antihistamines. For anaphylaxis, use an epinephrine auto-injector (EpiPen) and call emergency services. Keep the patient lying flat and elevate their legs if necessary.");
+        answers.put("Broken bone", "Precautions: Ensure adequate calcium and vitamin D intake, and wear protective gear during sports or high-risk activities. Treatment: Immobilize the area with a splint, apply ice packs to reduce swelling, and seek immediate professional medical care.");
+        answers.put("Food poisoning", "Precautions: Practice safe food handling by washing hands and cooking food thoroughly. Avoid expired or contaminated items. Treatment: Stay hydrated with electrolyte solutions and rest. Seek medical attention for persistent symptoms or severe dehydration.");
+        answers.put("Unconsciousness", "Precautions: Stay hydrated and avoid situations that could lead to fainting (e.g., standing too long). Treatment: Check for breathing and pulse. Call emergency services, provide CPR if needed, and place the person in a recovery position to keep the airway open.");
+        answers.put("Concussion", "Precautions: Wear helmets during activities like biking or contact sports. Avoid risky behaviors leading to head injuries. Treatment: Keep the person awake and observe for symptoms like confusion or nausea. Avoid exertion until cleared by a healthcare professional.");
+        answers.put("Heavy bleeding", "Precautions: Use tools carefully to avoid cuts. Wear protective clothing during activities with risks of injury. Treatment: Apply direct pressure to the wound using clean cloth or bandages. Elevate the affected area and seek emergency care if bleeding persists after 10 minutes.");
+        answers.put("Seizure", "Precautions: Identify triggers and avoid them. Take prescribed medications consistently. Treatment: Protect the person by clearing nearby objects and turning them on their side. Do not restrain or put anything in their mouth. Seek medical attention afterward.");
+        answers.put("High fever", "Precautions: Avoid infections by maintaining good hygiene. Ensure vaccinations are current. Treatment: Administer fever-reducing medications like acetaminophen or ibuprofen. Keep the person cool with damp cloths and ensure hydration. Seek medical care for prolonged or extremely high fever.");
+        answers.put("Asphyxiation", "Precautions: Keep small objects away from young children. Learn first-aid techniques for choking. Treatment: Perform the Heimlich maneuver if choking is the cause. Begin CPR if breathing has stopped. Call emergency services immediately.");
+        answers.put("Heart failure", "Precautions: Maintain a heart-healthy lifestyle with proper diet, regular exercise, and management of existing heart conditions. Treatment: Seek immediate emergency care. Administer oxygen if available, and keep the patient calm and still.");
+        answers.put("Drug overdose", "Precautions: Safeguard medications and avoid misuse. Use prescription drugs only under medical supervision. Treatment: Call emergency services immediately. Administer naloxone if the overdose involves opioids, and ensure the person remains breathing and conscious.");
 
         // Create an ArrayAdapter for the spinner
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
