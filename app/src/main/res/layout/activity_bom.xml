@@ -36,4 +36,11 @@
         android:id="@+id/submitButton"
         android:textStyle="bold"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Jai shree ram"
+        android:background="@color/white"
+        android:textSize="52dp"/>
+
 </LinearLayout>
