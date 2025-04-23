@@ -5,7 +5,35 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bom">
-
+    android:orientation="vertical"
+    tools:context=".bom"
+    android:background="@color/black">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Select your Medical issue"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"/>
+    <Spinner
+        android:id="@+id/mySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="#E91E63" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:hint="Type your issue"
+        android:background="#E91E63"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:textStyle="bold"/>
 
 </LinearLayout>

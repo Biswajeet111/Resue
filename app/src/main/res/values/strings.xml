@@ -2,4 +2,20 @@
     <string name="app_name">ResQ</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_halo">halo</string>
+    <string-array name="spinner_items">
+        <item>Heart attack</item>
+        <item>Stroke</item>
+        <item>Allergic reaction</item>
+        <item>Broken bone</item>
+        <item>Food poisoning</item>
+        <item>Unconsciousness</item>
+        <item>Concussion</item>
+        <item>Broken bone</item>
+        <item>Heavy bleeding</item>
+        <item>Seizure</item>
+        <item>High fever</item>
+        <item>Asphyxiation</item>
+        <item>Heart failure</item>
+        <item>Drug overdose</item>
+    </string-array>
 </resources>

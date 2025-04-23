@@ -59,40 +59,6 @@ public class User extends AppCompatActivity {
                 startActivity(next);
             }
         });
-        PhoneAuthOptions options =
-                PhoneAuthOptions.newBuilder(FirebaseAuth.getInstance())
-                        .setPhoneNumber("+91XXXXXXXXXX") // User's phone number
-                        .setTimeout(60L, TimeUnit.SECONDS) // OTP expiration time
-                        .setActivity(this) // Current activity
-                        .setCallbacks(new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-                            @Override
-                            public void onVerificationCompleted(PhoneAuthCredential credential) {
-                                Log.d("OTP", "Verification completed");
-                            }
 
-                            @Override
-                            public void onVerificationFailed(FirebaseException e) {
-                                Log.e("OTP", "Verification failed: " + e.getMessage());
-                            }
-
-                            @Override
-                            public void onCodeSent(String verificationId, PhoneAuthProvider.ForceResendingToken token) {
-                                Log.d("OTP", "OTP Sent: " + verificationId);
-                                // Store verificationId to verify later
-                            }
-                        })
-                        .build();
-        PhoneAuthProvider.verifyPhoneNumber(options);
-
-        String verificationId = "",enteredOtp = "";
-        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, enteredOtp);
-        FirebaseAuth.getInstance().signInWithCredential(credential)
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        Log.d("OTP", "User verified successfully!");
-                    } else {
-                        Log.e("OTP", "Verification failed.");
-                    }
-                });
     }
 }

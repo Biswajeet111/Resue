@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black"
+    
+
     tools:context=".User">
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign"
@@ -14,7 +15,7 @@
         android:layout_height="75dp"
        android:layout_centerHorizontal="true"
        android:layout_marginTop="250dp"
-       android:background="#EFE91E62"
+       android:background="#E91E63"
         android:text="login"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -38,12 +39,16 @@
         android:paddingEnd="0dp"/>
 
 
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="325dp"
+        android:layout_marginStart="345dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/bot" />
+        android:background="@drawable/corner"
+        android:src="@drawable/bot"
+        android:padding="5dp"/>
+
 </RelativeLayout>

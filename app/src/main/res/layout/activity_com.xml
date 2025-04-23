@@ -2,44 +2,138 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/black">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:text="Login"
+
         android:layout_gravity="center"
+        android:layout_marginBottom="70dp"
+        android:text="LOGIN"
         android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+         android:layout_width="350dp"
+         android:layout_height="520dp"
+         android:layout_gravity="center"
+         app:cardCornerRadius="50dp"
+         app:cardBackgroundColor="#12BFF4"
+         >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginBottom="15dp"/>
+
+         <EditText
+             android:layout_width="280dp"
+             android:layout_height="50dp"
+             android:hint="Enter Your Name"
+             android:background="@color/white"
+             android:id="@+id/name"
+             android:inputType="text"
+
+             android:layout_marginStart="15dp"
+             android:layout_marginTop="60dp"
+             />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Phone Number"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
         android:textSize="25sp"
         android:layout_marginBottom="15dp"/>
 
     <EditText
-        android:layout_width="350dp"
+        android:layout_width="280dp"
         android:layout_height="50dp"
         android:hint="Enter Your Phone Number"
         android:background="@color/white"
-        android:gravity="center"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="15dp"
-        android:id="@+id/etd1"
-        android:textColor="@color/black"
+      android:id="@+id/phone"
+        android:inputType="number"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="160dp"
         />
-    <EditText
-        android:layout_width="350dp"
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"
+             android:layout_marginTop="220dp"
+             android:text="OTP"
+             android:textColor="@color/black"
+             android:textStyle="bold"
+             android:layout_marginStart="15dp"
+             android:textSize="25sp"
+           />
+         <EditText
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:hint="Enter OTP"
         android:background="@color/white"
-        android:gravity="center"
-        android:layout_marginStart="30dp"
-        android:id="@+id/etd2"
-        android:textColor="@color/black"/>
+             android:inputType="number"
+        android:id="@+id/otp"
+        android:layout_marginStart="70dp"
+             android:layout_marginTop="220dp"
+             />
+         <Button
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:layout_marginTop="220dp"
+             android:id="@+id/verify"
+             android:textStyle="bold"
+
+            android:layout_marginStart="230dp"
+             android:text="Verify"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"
+             android:layout_marginTop="280dp"
+             android:text="EmerNUm"
+             android:textColor="@color/black"
+             android:textStyle="bold"
+             android:layout_marginStart="75dp"
+             android:textSize="25sp"
+             />
+         <EditText
+             android:layout_width="150dp"
+             android:layout_height="50dp"
+             android:hint="Enter OTP"
+             android:background="@color/white"
+             android:text="hclahcoiahochoa"
+             android:layout_marginStart="15dp"
+             android:layout_marginTop="340dp"
+             />
+         <EditText
+             android:layout_width="150dp"
+             android:layout_height="50dp"
+             android:hint="Enter OTP"
+             android:background="@color/white"
+             android:text="hclahcoiahochoa"
+             android:layout_marginStart="15dp"
+             android:layout_marginTop="400dp"
+             />
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:id="@+id/btn"
-        android:gravity="center"
-        android:layout_marginStart="115dp"
-        android:text="Login"/>
+        android:layout_gravity="bottom"
+        android:layout_marginStart="75dp"
+        android:textStyle="bold"
+        android:text="Submit"/>
+     </androidx.cardview.widget.CardView>
 </LinearLayout>
