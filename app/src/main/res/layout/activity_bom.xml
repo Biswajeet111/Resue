@@ -25,15 +25,19 @@
         android:layout_marginTop="20dp"
       android:layout_marginStart="20dp"
         android:background="#FEE60961" />
-    <EditText
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Chat"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:textColor="@color/black"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:id="@+id/userInput"
-        android:hint="Type your issue"
-        android:background="#FEE60961"/>
+        android:background="#DB3C65"
+        android:text="Type your Issue "
+        android:textStyle="bold" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,23 +48,5 @@
         android:layout_marginStart="40dp"
         android:textStyle="bold"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Chat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-
-        android:background="#DB3C65"
-        android:text="Chat"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:text="Jai shree ram"
-        android:textAllCaps="true"
-        android:background="@color/red"
-        android:textColor="@color/white"
-        android:textSize="52dp"/>
 
 </LinearLayout>
