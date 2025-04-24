@@ -11,32 +11,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RESQ APP"
-        android:textSize="60dp"
-        android:layout_marginStart="65dp"
+        android:text="@string/resq"
+        android:textSize="60sp"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="50dp"
         android:textColor="#F0E4E9"
         android:textStyle="bold"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/sign"
-        android:layout_width="261dp"
-        android:layout_height="75dp"
-       android:layout_centerHorizontal="true"
-       android:layout_marginTop="250dp"
-       android:background="#59C82990"
-        android:text="login"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/emer"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="250dp"
         android:background="@drawable/corner"
         android:padding="55dp"
         android:text="Emergency"
@@ -47,7 +34,18 @@
         android:paddingStart="10dp"
         android:paddingEnd="0dp"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign"
+        android:layout_width="261dp"
+        android:layout_height="75dp"
+       android:layout_marginStart="280dp"
 
+        android:background="#59C82990"
+        android:text="login"
+
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating"

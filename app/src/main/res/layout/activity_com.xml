@@ -9,17 +9,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-
+        android:layout_marginTop="25dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="50dp"
         android:text="LOGIN"
         android:textColor="@color/white"
         android:textSize="60sp"
         android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
-         android:layout_width="350dp"
+         android:layout_width="370dp"
          android:layout_height="520dp"
          android:layout_gravity="center"
          app:cardCornerRadius="50dp"
@@ -31,23 +30,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="35dp"
         android:text="Name"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25sp"
         android:layout_marginBottom="15dp"/>
 
          <EditText
-             android:layout_width="280dp"
+             android:layout_width="300dp"
              android:layout_height="50dp"
-             android:hint="Enter Your Name"
+             android:hint="               Enter Your Name"
+
              android:textColor="@color/black"
-             android:background="@color/white"
+             android:background="@drawable/combut"
              android:id="@+id/name"
              android:inputType="text"
 
-             android:layout_marginStart="15dp"
+             android:layout_marginStart="35dp"
              android:layout_marginTop="60dp"
              />
     <TextView
@@ -55,89 +55,97 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:text="Phone Number"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="35dp"
         android:textSize="25sp"
         android:layout_marginBottom="15dp"/>
 
     <EditText
-        android:layout_width="280dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
-        android:hint="Enter Your Phone Number"
+        android:hint="         Enter Your Phone Number"
         android:textColor="@color/black"
-        android:background="@color/white"
+        android:background="@drawable/combut"
       android:id="@+id/phone"
         android:inputType="number"
 
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="160dp"
         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="220dp"
+            android:text="Priority Number"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="35dp"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="                    Enter Number"
+            android:background="@drawable/combut"
+            android:layout_marginStart="35dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="270dp"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="                    Enter Number"
+            android:background="@drawable/combut"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="330dp"
+            />
          <TextView
              android:layout_width="wrap_content"
              android:layout_height="50dp"
-             android:layout_marginTop="220dp"
+             android:layout_marginTop="400dp"
              android:text="OTP"
-             android:textColor="@color/black"
+             android:textColor="@color/white"
              android:textStyle="bold"
-             android:layout_marginStart="15dp"
+             android:layout_marginStart="35dp"
              android:textSize="25sp"
+             android:paddingTop="10dp"
            />
+
          <EditText
-        android:layout_width="150dp"
+        android:layout_width="130dp"
         android:layout_height="50dp"
-        android:hint="Enter OTP"
-        android:background="@color/white"
+        android:hint="      Enter OTP"
+             android:background="@drawable/combut"
              android:textColor="@color/black"
              android:inputType="number"
         android:id="@+id/otp"
-        android:layout_marginStart="70dp"
-             android:layout_marginTop="220dp"
-             />
-         <Button
-             android:layout_width="100dp"
-             android:layout_height="50dp"
-             android:layout_marginTop="220dp"
-             android:id="@+id/verify"
-             android:textStyle="bold"
-
-             android:layout_marginStart="230dp"
-             android:text="Verify"/>
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="50dp"
-             android:layout_marginTop="280dp"
-             android:text="Priority Number"
-             android:textColor="#000000"
-             android:textStyle="bold"
-             android:layout_marginStart="75dp"
-             android:textSize="25sp"
-             />
-         <EditText
-             android:layout_width="300dp"
-             android:layout_height="50dp"
-             android:hint="Enter Number"
-             android:background="#FFFFFF"
-             android:layout_marginStart="15dp"
-             android:textColor="@color/black"
-             android:layout_marginTop="340dp"
-             />
-         <EditText
-             android:layout_width="300dp"
-             android:layout_height="50dp"
-             android:hint="Enter Number"
-             android:background="@color/white"
-             android:layout_marginStart="15dp"
+        android:layout_marginStart="90dp"
              android:layout_marginTop="400dp"
              />
-    <Button
+         <androidx.appcompat.widget.AppCompatButton
+             android:background="@drawable/button"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:layout_marginTop="400dp"
+             android:id="@+id/verify"
+             android:textStyle="bold"
+             android:textSize="15sp"
+android:textColor="@color/white"
+             android:layout_marginStart="230dp"
+             android:text="Verify"/>
+
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:background="@drawable/button"
         android:id="@+id/btn"
         android:layout_gravity="bottom"
         android:textColor="@color/white"
         android:layout_marginStart="75dp"
+        android:textSize="15sp"
         android:textStyle="bold"
+        android:layout_marginBottom="10dp"
         android:text="Submit"/>
      </androidx.cardview.widget.CardView>
 </LinearLayout>

@@ -24,7 +24,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
       android:layout_marginStart="20dp"
-        android:background="#FEE60961" />
+        android:background="@drawable/combut"
+        android:textAlignment="center"/>
 
 
 
@@ -34,18 +35,21 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:background="#DB3C65"
+        android:background="#BBDB3C65"
+        android:textColor="@color/white"
         android:text="Type your Issue "
         android:textStyle="bold" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:background="#DB3C65"
+        android:background="@drawable/button"
         android:text="Submit"
+        android:textSize="15sp"
         android:id="@+id/submitButton"
-        android:layout_marginStart="40dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="25dp"
         android:textStyle="bold"/>
 
 

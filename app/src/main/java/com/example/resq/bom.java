@@ -85,21 +85,19 @@ public class bom extends AppCompatActivity {
             }
         });
 
-        EditText userInput = findViewById(R.id.userInput);
+//
         Button btnSubmit = findViewById(R.id.Chat);
         ExecutorService executorService = Executors.newSingleThreadExecutor();
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String input = userInput.getText().toString();
-                userInput.setText(input);
 
                 executorService.execute(() -> {
-                    String botResponse = chatHelper.getBotResponse(input);
+
                     runOnUiThread(() -> {
                         Intent intent = new Intent(bom.this, Information.class);
-                        intent.putExtra("BOT_RESPONSE", botResponse);
+
                         startActivity(intent);
                     });
                 });

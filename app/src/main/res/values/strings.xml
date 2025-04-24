@@ -2,6 +2,11 @@
     <string name="app_name">ResQ</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_halo">halo</string>
+    <string name="resq">RESQ</string>
+    <string name="result">Result</string>
+    <string name="selected_item">Selected Item</string>
+    <string name="healix">Healix</string>
+    <string name="type_your_issue">Type Your Issue</string>
     <string-array name="spinner_items">
         <item>Heart attack</item>
         <item>Stroke</item>
