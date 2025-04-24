@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".bom"
-    android:background="@drawable/bg">
+    android:background="@drawable/background">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="30dp"
