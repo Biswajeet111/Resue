@@ -35,7 +35,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:background="#BBDB3C65"
+        android:background="@drawable/button"
         android:textColor="@color/white"
         android:text="Type your Issue "
         android:textStyle="bold" />
