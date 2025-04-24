@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -14,6 +15,8 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class bom extends AppCompatActivity {
 
@@ -25,6 +28,9 @@ public class bom extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bom);
+        EditText edt,userInput;
+                userInput = findViewById(R.id.userInput);
+
 
         // Initialize Spinner
         Spinner mySpinner = findViewById(R.id.mySpinner);
@@ -84,8 +90,29 @@ public class bom extends AppCompatActivity {
                 Toast.makeText(bom.this, "Nothing selected", Toast.LENGTH_SHORT).show();
             }
         });
+        Button btnSubmit = findViewById(R.id.Chat);
 
-        // Initialize Submit Button
+
+        // Initialize background thread executor
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String input = userInput.getText().toString(); // Get user input
+                userInput.setText(""); // Clear input field
+
+                // Fetch response asynchronously
+                executorService.execute(() -> {
+                    final String botResponse = chatHelper.getBotResponse(input); // Call utility method
+                    runOnUiThread(() -> chatResponse.setText("Bot: " + botResponse)); // Update UI on main thread
+                });
+            }
+        });
+
+
+
+// Initialize Submit Button
         Button submitButton = findViewById(R.id.submitButton);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override

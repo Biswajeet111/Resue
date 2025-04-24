@@ -31,16 +31,28 @@
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:id="@+id/userInput"
         android:hint="Type your issue"
         android:background="#FEE60961"/>
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="#DB3C65"
         android:text="Submit"
         android:id="@+id/submitButton"
         android:layout_marginStart="40dp"
         android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+
+        android:background="#DB3C65"
+        android:text="Chat"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
