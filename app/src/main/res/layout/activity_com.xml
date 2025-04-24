@@ -22,7 +22,7 @@
          android:layout_height="520dp"
          android:layout_gravity="center"
          app:cardCornerRadius="50dp"
-         app:cardBackgroundColor="#F6145E"
+         app:cardBackgroundColor="#ED041C"
          >
 
 
