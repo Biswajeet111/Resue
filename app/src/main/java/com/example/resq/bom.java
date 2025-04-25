@@ -1,6 +1,7 @@
 package com.example.resq;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -29,9 +30,7 @@ public class bom extends AppCompatActivity {
 
         // Initialize Spinner
         Spinner mySpinner = findViewById(R.id.mySpinner);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            mySpinner.setOutlineSpotShadowColor(getResources().getColor(R.color.black));
-        }
+
 
         String[] items = {
                 "Heart attack",
@@ -104,7 +103,9 @@ public class bom extends AppCompatActivity {
             }
         });
 
-        Button submitButton = findViewById(R.id.submitButton);
+        Button submitButton, store;
+                submitButton = findViewById(R.id.submitButton);
+                store = findViewById(R.id.store);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,5 +119,16 @@ public class bom extends AppCompatActivity {
                 }
             }
         });
+        store.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//               Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://resq1.odoo.com/") );
+                Intent intent = new Intent(bom.this,Web.class);
+                startActivity(intent);
+
+
+
+            }}
+        );
     }
 }

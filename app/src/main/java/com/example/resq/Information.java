@@ -46,7 +46,7 @@ public class Information extends AppCompatActivity {
                 // Call chatbot API asynchronously
                 executorService.execute(() -> {
                     final String botResponse = getBotResponse(userMessage);
-                    runOnUiThread(() -> chatWindow.append("\nBot: " + botResponse));
+                    runOnUiThread(() -> chatWindow.append("\nHealix: " + botResponse));
                 });
             }
         });

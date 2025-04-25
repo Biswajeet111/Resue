@@ -12,11 +12,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.firebase.FirebaseException;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.PhoneAuthCredential;
-import com.google.firebase.auth.PhoneAuthOptions;
-import com.google.firebase.auth.PhoneAuthProvider;
+//import com.google.firebase.FirebaseException;
+//import com.google.firebase.auth.FirebaseAuth;
+//import com.google.firebase.auth.PhoneAuthCredential;
+//import com.google.firebase.auth.PhoneAuthOptions;
+//import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,15 +27,18 @@ public class com extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_com);
+//        DatabaseReference databaseReference;
         Button btn;
-        EditText etd1,etd2;
         btn = findViewById(R.id.btn);
+        EditText name;
+        name = findViewById(R.id.name);
+        String userInput = name.getText().toString();
 
-//        String phone = etd1.getText().toString();
-//        String otp = etd2.getText().toString();
-//        if (phone.isEmpty() || otp.isEmpty()) {
-//            return;
-//        }
+
+//         databaseReference = FirebaseDatabase.getInstance().getReference("UserInputs");
+//        String key = databaseReference.push().getKey(); // Unique ID
+//        databaseReference.child(key).setValue(userInput);
+
         btn.setOnClickListener(v -> {
             Intent next = new Intent(com.this,bom.class);
             startActivity(next);

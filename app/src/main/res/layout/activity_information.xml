@@ -5,11 +5,22 @@
     android:orientation="vertical"
     android:background="@drawable/background"
     android:padding="16dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="Healix"
+    android:textSize="35sp"
+    android:textColor="@color/white"
+    android:textAlignment="center"/>
+
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/chatWindow"
@@ -26,7 +37,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:hint="@string/type_your_issue"/>
+        android:hint="@string/type_your_issue"
+        android:textColorHint="@color/white"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sendButton"

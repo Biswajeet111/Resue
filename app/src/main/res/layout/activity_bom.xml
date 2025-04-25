@@ -8,6 +8,16 @@
     android:orientation="vertical"
     tools:context=".bom"
     android:background="@drawable/background">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/store"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+       android:layout_gravity="end"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:text=" Resq Store "
+        android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -23,9 +33,9 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-      android:layout_marginStart="20dp"
+      android:layout_marginStart="30dp"
         android:background="@drawable/combut"
-        android:textAlignment="center"/>
+      />
 
 
 
@@ -34,7 +44,7 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:background="@drawable/button"
         android:textColor="@color/white"
         android:text="Type your Issue "
@@ -49,7 +59,7 @@
         android:textSize="15sp"
         android:id="@+id/submitButton"
         android:textColor="@color/white"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="30dp"
         android:textStyle="bold"/>
 
 
