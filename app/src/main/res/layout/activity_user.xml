@@ -58,12 +58,15 @@ android:layout_marginTop="30dp"
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating"
-        android:layout_width="105dp"
-        android:layout_height="125dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="335dp"
-        android:layout_marginBottom="30dp"
-        android:background="@color/white"
-        android:padding="5dp"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+       android:src="@drawable/bot"
+        android:contentDescription="Chatbot Icon"
+        app:backgroundTint="#E0E0E7"
+        android:padding="10dp"/>
 
 </RelativeLayout>

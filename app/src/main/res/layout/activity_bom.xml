@@ -13,6 +13,7 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
        android:layout_gravity="end"
         android:background="@drawable/button"
         android:textColor="@color/white"
@@ -36,9 +37,6 @@
       android:layout_marginStart="30dp"
         android:background="@drawable/combut"
       />
-
-
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Chat"
         android:layout_width="350dp"
@@ -60,6 +58,18 @@
         android:id="@+id/submitButton"
         android:textColor="@color/white"
         android:layout_marginStart="30dp"
+        android:textStyle="bold"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button"
+        android:text="Call Doctor"
+        android:textSize="15sp"
+        android:id="@+id/doc"
+        android:textColor="@color/white"
+        android:layout_marginRight="15dp"
+       android:layout_gravity="end"
         android:textStyle="bold"/>
 
 

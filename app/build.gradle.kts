@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.resq"
-        minSdk = 21
+        minSdk = 25
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -53,12 +54,15 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.play.services.maps)
     implementation(libs.play.services.location)
+    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+    implementation("com.google.firebase:firebase-analytics")
 //    implementation("com.google.firebase:firebase-auth:22.1.2")
 //    implementation("com.google.android.gms:play-services-auth:20.7.0")
-//    implementation("com.google.firebase:firebase-database:latest_version")
+    implementation("com.google.firebase:firebase-database:latest_version")
 //    implementation("androidx.appcompat:appcompat:latest_version")
 //    implementation("androidx.constraintlayout:constraintlayout:latest_version")
 }

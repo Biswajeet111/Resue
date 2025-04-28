@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "886014462294",
+    "project_id": "resq-a9068",
+    "storage_bucket": "resq-a9068.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886014462294:android:94cfc6f38dc8cb45f8aef7",
+        "android_client_info": {
+          "package_name": "com.example.resq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886014462294-ge3a3pkjqfrq3hrhdjttqgmvulsnrh8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.resq",
+            "certificate_hash": "f005e08630a1e1710ea49c22511a4909abe1f6e7"
+          }
+        },
+        {
+          "client_id": "886014462294-u73bjh0uu33e7dnoh4g8qb3ai13o8u9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPm-OuIfEgnI9faW2el9oUny128x_Q9Y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886014462294-u73bjh0uu33e7dnoh4g8qb3ai13o8u9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

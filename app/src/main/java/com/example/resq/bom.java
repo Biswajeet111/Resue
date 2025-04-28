@@ -84,7 +84,7 @@ public class bom extends AppCompatActivity {
             }
         });
 
-//
+
         Button btnSubmit = findViewById(R.id.Chat);
         ExecutorService executorService = Executors.newSingleThreadExecutor();
 
@@ -103,9 +103,10 @@ public class bom extends AppCompatActivity {
             }
         });
 
-        Button submitButton, store;
-                submitButton = findViewById(R.id.submitButton);
-                store = findViewById(R.id.store);
+        Button submitButton, store ,doc;
+        submitButton = findViewById(R.id.submitButton);
+        doc = findViewById(R.id.doc);
+        store = findViewById(R.id.store);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,14 +121,20 @@ public class bom extends AppCompatActivity {
             }
         });
         store.setOnClickListener(new View.OnClickListener() {
+                                     @Override
+                                     public void onClick(View v) {
+               Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://resq1.odoo.com/") );
+                                         Intent intent1 = new Intent(bom.this,Web.class);
+                                         startActivity(intent);
+          }}
+        );
+        doc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//               Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://resq1.odoo.com/") );
-                Intent intent = new Intent(bom.this,Web.class);
+                Intent intent = new Intent(Intent.ACTION_DIAL );
+              intent.setData(Uri.parse("tel:+91 7004602210"));
+
                 startActivity(intent);
-
-
-
             }}
         );
     }

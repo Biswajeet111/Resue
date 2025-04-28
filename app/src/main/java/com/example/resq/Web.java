@@ -6,6 +6,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -18,11 +19,21 @@ public class Web extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_web);
-
+WebView webView;
         webView = findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient()); // Ensure links open in WebView
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true); // Enable JavaScript if needed
-        webView.loadUrl("https://www.example.com");
+        webView.loadUrl("https://resq1.odoo.com/");
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (webView.canGoBack()) {
+                    webView.goBack();
+                } else {
+                    finish(); // Close the app
+                }
+            }
+        });
     }
 }
