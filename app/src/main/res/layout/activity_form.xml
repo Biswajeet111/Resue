@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".form">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="Priority Number"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Family/Relative"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="   Enter Emergency Contact"
+                        android:textColorHint="@color/black"
+                        android:background="@drawable/combut"
+                        android:paddingStart="15sp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:inputType="phone"
+                        android:id="@+id/emer1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="   Enter Emergency Contact"
+                        android:background="@drawable/combut"
+                        android:paddingStart="15sp"
+                        android:textColorHint="@color/black"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:id="@+id/emer2" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="   Enter Emergency Contact"
+                        android:textColorHint="@color/black"
+                        android:background="@drawable/combut"
+                        android:paddingStart="15sp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:id="@+id/emer3" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="   Enter Emergency Contact"
+                        android:background="@drawable/combut"
+                        android:textColorHint="@color/black"
+                        android:paddingStart="15sp"
+                        android:layout_marginBottom="10dp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:id="@+id/emer4" />
+        <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingStart="15sp"
+                        android:hint="    Enter Emergency Contact"
+                        android:background="@drawable/combut"
+            android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+            android:inputType="number"
+                        android:id="@+id/emer5" />
+                </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="20dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginBottom="6dp"
+            android:text="Personal Doctor"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="   Enter Doctor Contact"
+            android:background="@drawable/combut"
+            android:paddingStart="15sp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/doc1"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="15sp"
+            android:hint="    Enter Doctor Contact"
+            android:background="@drawable/combut"
+            android:textColorHint="@color/black"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:id="@+id/doc2" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/btn2"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:text="Submit" />
+            </LinearLayout>
+
+

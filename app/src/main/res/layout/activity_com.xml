@@ -44,6 +44,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="      Enter Your Name"
+                android:textColorHint="@color/black"
+                android:paddingStart="15sp"
                 android:textColor="@color/black"
                 android:background="@drawable/combut"
                 android:id="@+id/name"
@@ -62,36 +64,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="      Enter Your Phone Number"
+                android:paddingStart="15sp"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:background="@drawable/combut"
                 android:id="@+id/phone"
                 android:inputType="phone" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Priority Number"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="20sp" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="   Enter Emergency Contact"
-                android:background="@drawable/combut"
-                android:layout_marginBottom="10dp"
-                android:textColor="@color/black"
-                android:id="@+id/emer1" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="    Enter Emergency Contact"
-                android:background="@drawable/combut"
-                android:textColor="@color/black"
-                android:id="@+id/emer2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -115,6 +95,8 @@
                     android:hint="      Enter OTP"
                     android:background="@drawable/combut"
                     android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingStart="15sp"
                     android:id="@+id/otp"
                     android:inputType="numberPassword" />
 

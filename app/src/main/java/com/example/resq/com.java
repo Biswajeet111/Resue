@@ -48,9 +48,9 @@ public class com extends AppCompatActivity {
         // Handle Submit
 //        submit.setOnClickListener(v -> verifyOtp());
         submit.setOnClickListener(v -> {
-            Intent intent = new Intent(this, bom.class);
+            Intent intent = new Intent(com.this, form.class);
             startActivity(intent);
-            finish();
+
         });
     }
 

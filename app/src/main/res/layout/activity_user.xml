@@ -14,13 +14,13 @@
         android:text="@string/resq"
         android:textSize="60sp"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="100dp"
         android:textColor="#F0E4E9"
         android:textStyle="bold"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="190dp"
         android:text="Your Safety, One tap away."
         android:layout_marginStart="30dp"
         android:textColor="@color/white"
@@ -29,12 +29,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/emer"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="220dp"
+        android:layout_height="190dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
         android:background="@drawable/corner"
-        android:padding="55dp"
+        android:padding="60dp"
         android:text="Emergency"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -45,13 +45,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign"
-        android:layout_width="61dp"
-        android:layout_height="45dp"
-       android:layout_marginStart="330dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginStart="300dp"
 android:layout_marginTop="30dp"
         android:background="#191406D0"
         android:text="login"
-
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold" />
@@ -60,13 +59,14 @@ android:layout_marginTop="30dp"
         android:id="@+id/floating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/bot"
+        app:maxImageSize="40dp"
+        android:contentDescription="AI Assistant"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-       android:src="@drawable/bot"
-        android:contentDescription="Chatbot Icon"
-        app:backgroundTint="#E0E0E7"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        app:backgroundTint="#E0D2E0"
         android:padding="10dp"/>
 
 </RelativeLayout>
