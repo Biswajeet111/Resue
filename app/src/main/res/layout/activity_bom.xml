@@ -40,6 +40,7 @@
         android:textColor="@color/white"
         android:layout_marginStart="30dp"
         android:textStyle="bold"/>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Chat"
         android:layout_width="350dp"
@@ -50,7 +51,6 @@
         android:textColor="@color/white"
         android:text="Type your Issue "
         android:textStyle="bold" />
-
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="140dp"
