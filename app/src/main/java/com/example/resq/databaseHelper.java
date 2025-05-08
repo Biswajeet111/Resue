@@ -6,11 +6,12 @@
 //import android.database.sqlite.SQLiteOpenHelper;
 //
 //// Define User Data Class
-//dataclass User(val id: Int, val name: String, val email: String, val password: String)
+//data class User(val id: Int, val name: String, val email: String, val password: String);
 //
-//        class databaseHelper(context: Context) : SQLiteOpenHelper(context, "UsersDB", null, 1) {
+//        class DatabaseHelper(context: Context);
+//        SQLiteOpenHelper(context, "UsersDB", null, 1); {
 //
-//    override fun; onCreate(db: SQLiteDatabase) {
+//    override fun onCreate(db: SQLiteDatabase) {
 //        db.execSQL("CREATE TABLE Users(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT UNIQUE, password TEXT)")
 //    }
 //
